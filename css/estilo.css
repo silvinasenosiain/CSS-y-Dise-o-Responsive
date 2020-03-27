@@ -12,21 +12,6 @@ body{
   width: 100%;
   font-family: 'DancingScript';
 }
-/*NO ESTA FUNCIONANDO COMO DEBE
-
-@media screen and (min-width: 900px){
-  .contenido{
-    max-width: 900px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .contenido{
-    width: 100%;
-    text-align: center;
-  }
-}*/
 
 /*ENCABZADO GENERAL A 2 COLUMNAS */
 header{
@@ -44,7 +29,7 @@ header{
   font-family: 'DancingScript';
 }
 
-/*ENCABEZADO LADO IZQUIERDO*/
+/*ENCABEZADO LADO IZQUIERDO CON EL MENU*/
 .encabezado1 {
   width: 65%;
 }
@@ -155,7 +140,7 @@ h1{
 }
 
 /*PIE DE PAGINA*/
-footer{
+.pie{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background: #C6d5c5;
@@ -167,18 +152,47 @@ footer{
   font-size: 18px;
 }
 
-footer > div{
+.pie > div{
   width: 25%;
   text-align: center;
   padding-top: 10px;
 }
 
-footer > div > img{
+.pie > div > img{
   width: 15px;
   height: 15px;
 }
 
-footer > div > h2 {
+.pie > div > h2 {
   text-align: center;
   font-style: italic;
 }
+
+@media screen and (max-width: 900px){
+  .pie>div{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    }
+  .pie>div>h2{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    }
+
+  .encabezado1>div{
+    width: 100%;
+    text-align: center;
+    }
+
+  .encabezado2>div{
+    width: 100%;
+    text-align: center;
+    }
+
+  .contenedor2>div{
+    width: 100%;
+    text-align: center;
+    }
+
+  }
