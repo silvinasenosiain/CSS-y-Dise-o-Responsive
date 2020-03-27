@@ -12,21 +12,6 @@ body{
   width: 100%;
   font-family: 'DancingScript';
 }
-/*NO ESTA FUNCIONANDO COMO DEBE
-
-@media screen and (min-width: 900px){
-  .contenido{
-    max-width: 900px;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 900px){
-  .contenido{
-    width: 100%;
-    text-align: center;
-  }
-}*/
 
 /*ENCABZADO GENERAL A 2 COLUMNAS */
 header{
@@ -58,8 +43,8 @@ h1{
   text-align: left;
   font-style: italic;
   padding-top: 10px;
-  font-size: 65px;
   padding-left: 10px;
+  font-size: 65px;
   text-shadow: 2px 2px #02010a;
 }
 
@@ -94,23 +79,8 @@ h1{
     text-align: center;
   }
 }
-/*CONTAINER DE PRIMERA IMAGEN CENTRADA*/
-#contenedor {
-  display: flex;
-}
 
-#imagen1 {
-  background: #82c3a6;
-  text-align: center;
-  padding: 10px;
-}
-#imagen1 > img{
-  width: 90%;
-  text-align: center;
-  border: 2px #02010a solid;
-}
-
-/*CONTAINER DE LAS 2 SEGUNDAS IMAGENES*/
+/*CONTAINER DE LAS 3 IMAGENES POR COLUMNA*/
 .contenedor2 {
   width: 100%;
   display: -webkit-flex;
@@ -121,7 +91,7 @@ h1{
 }
 
 .contenedor2 > div{
-  width: 50%;
+  width: 33%;
   text-align: center;
   padding-top: 10px;
 }
@@ -133,25 +103,18 @@ h1{
   margin-left: 20px;
 }
 
-#img3> img {
-  width: 65%;
-  text-align: center;
-  border: 2px #02010a solid;
-  margin-left: 20px;
-}
-
 /*PROPIEDADES PARA CUANDO EL CURSO SE POSICIONA SOBRE LAS IMAGENES*/
-#img2 :hover{
-  transform: rotate(10deg);
-  -webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
-  filter: drop-shadow(2px 2px 2px #82c3a6);
-  border: none;
+#img1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
-#img3 :hover{
-  transform: translate(20px, -5px);
-  -webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
-  filter: drop-shadow(2px 2px 2px #82c3a6);
-  border: none;
+#imgPares{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#imgSepia{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
 }
 
 /*PIE DE PAGINA*/
